@@ -1,0 +1,28 @@
+#include <stdio.h>
+main(){
+	int N,i;
+ 	char A[10], S[10];
+	do{
+		printf ("Nhap so nguyen N: ");
+    	scanf ("%d",&N);
+	}
+ 	while(N<=0||N>=10);
+ 	
+	printf ("Nhap mang A:\n");
+	for (i=0;i<N;i++){
+		printf ("Nhap phan tu A[%d]: ",i);
+        fflush(stdin);
+		scanf("%c",&A[i]);
+	}
+	
+	printf ("\nMang vua nhap la:\n");
+	for (i=0;i<N;i++) printf ("%c ",A[i]);
+	
+	for (i=0;i<N;i++){
+		if((A[i]>='a')&&(A[i]<='z')) S[i]='T';
+        else if((A[i]>='A')&&(A[i]<='Z')) S[i]='H';
+        	 else S[i]='K';
+	}
+ 	printf ("\n\nMang S la:\n");
+ 	for (i=0;i<N;i++) printf ("%c ",S[i]);
+}
