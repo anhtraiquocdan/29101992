@@ -1,0 +1,16 @@
+#include <stdio.h>
+main(){
+	int N,kt=0;
+ 	do{
+	 	printf("Nhap so nguyen duong N: ");
+    	scanf("%d",&N);}
+ 	while(N<=0);
+ 	
+ 	while(N>=1){
+		if(N%2==1) kt--; // o buoc nay co the dung 2 bien, 1 bien dem so chan va 1 bien dem so le
+    		else kt++;
+	N/=10;}
+	
+ 	if (kt==0) printf("So vua nhap la so can bang !");
+ 		else printf("So vua nhap khong la so can bang!");
+}
