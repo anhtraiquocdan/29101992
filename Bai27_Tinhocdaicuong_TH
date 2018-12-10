@@ -1,0 +1,17 @@
+#include <stdio.h>
+main(){
+	float x,T=0,d=1;
+	do{
+		printf("Nhap so km di duoc: ");
+		scanf("%f",&x);
+	}
+ 	while (x<=0||x>=200); 
+ 	if(x>120) d=0.9; // Neu x > 120 ta gan he so d = 0.9 de giam 10% tien 
+ 	if(x>5){		// Neu 5<x<120 so tien tu km thu 6 den 119 bang 11000 * (x-5)
+	 	T+=11000*(x-5);
+		x=5; // Day de tinh so km con lai
+	}
+ 	if(x>1) T+=13500*(x-1); // Neu 1<x<=5 thi so tien 
+ 	T+=15000; // Neu x =1 thi T = 15000
+	printf("\nSo tien di taxi: %.0f VND",d*T);
+}
