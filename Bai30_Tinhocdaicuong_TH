@@ -1,0 +1,19 @@
+#include <stdio.h>
+main(){
+	int N, T500, T200, T100; // so menh gia 500, 200, 100
+	do{
+		printf ("Nhap so nguyen N (0 < N < 100000) la gia tien thu phi:");
+ 	   scanf ("%d",&N);
+    if(N%100!=0) printf ("Gia tien khong the le hon 100 dong\n");}
+	while(N<=0||N>=100000||N%100!=0);
+	
+	N/=100; // loai bo don vi tinh tram dong. Vi du tien thu phi la 500.000 => N = 5000
+	printf ("\nCac phuong an co the lua chon la:");
+	
+	for(T500=N/5; T500>=0; T500--) // cho nay la minh lay so luong tien 500 co the co ( vi du N = 5000 => so to 500 toi da la 100,99,98...
+			for(T200=(N-5*T500)/2;T200>=0; T200--) { // cho nay tim so luong tien 200 co the co dua theo so to 500 o vong for 1
+      		T100=N-5*T500-2*T200; 
+      		printf("\n---------------------------------------------------");
+       		printf ("\n%3d to 500 dong | %3d to 200 dong | %3d to 100 dong",T500,T200,T100);
+		}  
+}
