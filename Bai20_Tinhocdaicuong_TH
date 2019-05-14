@@ -1,5 +1,5 @@
-#include <conio.h>
 #include <stdio.h>
+
 main() {
  	int i,M,N,d=0,T=0;
 	do {
@@ -12,13 +12,11 @@ main() {
   	for(i=1;i<=N;i++) 
   		if(M%i==0&&N%i==0){
 	 		 d++;
-	 		 T=T+i;
+	 		 T=T+i; // Neu i la uoc chung thi tinh tong
 		}
 		
 	printf("\n Hai so vua nhap co %d uoc chung",d);
-	printf("\n Tong cac uoc chung là: %d",T);
-	getch();
+	printf("\n Tong cac uoc chung lÃ : %d",T);
+	
  }
-
-
 
