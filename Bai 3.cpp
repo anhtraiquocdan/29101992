@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+
+main(){
+	int N, i , dem=0;
+	float max, a[9];
+	
+	do {
+		printf("\nNhap so nguyen 0<N<10: ");
+		scanf("%d",&N);
+	}
+	while(N<=0||N>=10);
+	
+	for(i=0;i<N;i++){
+		printf("\nNhap phan tu thu %d: ",i+1);
+		scanf("%f",&a[i]);
+	}
+	
+	printf("\nMang vua nhap la:");
+	for(i=0;i<N;i++)
+			printf("%5.2f",a[i]);
+	
+	max=a[0];								/* Doan nay dung de tim gia tri lon nhat trong day so */
+	for(i=1;i<N;i++) {											
+		if(a[i]>max) max = a[i];
+	} 
+													
+	for(i=0;i<N;i++){						/* Doan nay dung de dem co bao nhieu phan tu bang gia tri lon nhat */
+		if(a[i]==max) dem++;
+	}
+					
+	printf("\nGia tri lon nhat cua day la %.2f",max);
+	printf("\nso luong phan tu bang gia tri lon nhat la %d",dem);
+	getch();
+}
+

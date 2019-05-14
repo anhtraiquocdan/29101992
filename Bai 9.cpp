@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+int main(){
+	float pi = 0,epsilon;
+	int n = 0;
+	
+	do{
+		printf("\nNhap vao so duong epsilon < 1: ");
+     	 scanf("%f",&epsilon);
+	}
+	while(epsilon<=0||epsilon>=1);
+	
+	do{
+		pi=pi+4*pow(-1,n)/(2*n+1); /* pow(a,b) = a mu b*/
+    	n++;
+	}
+	while(1.0/(2*n+1)>=epsilon);// <epsilon thi dung
+	
+	printf("\nSo pi = %5.2f",pi);
+	getch();
+}

@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <conio.h>
+main(){
+	int N,n,i,T,dem=0,a[10];
+  	do{
+	  printf("\nNhap so nguyen 0<N<10 : ");
+      scanf("%d",&N);
+	}
+ 	 while(N<1||N>10);
+  			
+	for(i=0;i<N;i++){
+	  	printf("\nNhap phan tu thu %d: ",i+1);
+		scanf("%d",&a[i]);
+	}
+	
+  	printf("\nMang vua nhap la:");
+  	for(i=0;i<N;i++){
+	  	printf("%5d",a[i]);
+	}  	
+  
+  	printf("\nCac so tu man trong mang la :\n");
+ 	for(i=0;i<N;i++){
+	  	T=0;n=a[i];
+        while(n>0){
+			T+=(n%10)*(n%10)*(n%10);
+ 	        n/=10;
+		}
+        if(T==a[i]&&a[i]>0){
+			printf("%d,",a[i]);
+            if(a[i]<2016) dem++;
+		}
+    }
+  	printf("\nSo luong cac so tu man co trong day nho hon 2016 la %2d",dem);
+  	getch();
+ }
+
+

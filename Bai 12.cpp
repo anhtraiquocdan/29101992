@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+main(){
+	int N,i,j,dem_uoc, s=0;
+	do {
+		printf("\nNhap so nguyen 0<N<200: ");
+		scanf("%d",&N);
+	}
+	while(N<=0||N>=200);
+	
+	printf("\nCac so nguyen to trong khoang 0 den %d la: ",N);
+	
+	for(i=2;i<N;i++){
+		dem_uoc=0; // dem so uoc cua i
+		for(j=2;j<=sqrt(i);j++){// neu chay tu 2 -> i-1 van ok
+			if(i%j == 0){
+				dem_uoc ++;
+				break;
+			}
+		}
+		if(dem_uoc == 0){ // => i la so nguyen to
+			printf("%5d",i);
+			s=s+i;
+		}	
+	}	
+			
+	if(s==0) 
+		printf("\nKhong co so nguyen to nao!");
+	else 
+		printf("\nTong cac so nguyen to la: %d",s);
+	getch();
+}
