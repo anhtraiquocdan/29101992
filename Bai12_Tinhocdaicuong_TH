@@ -1,6 +1,6 @@
 #include<stdio.h>
-#include<conio.h>
 #include<math.h>
+
 main(){
 	int N,i,j,dem_uoc, s=0;
 	do {
@@ -29,5 +29,5 @@ main(){
 		printf("\nKhong co so nguyen to nao!");
 	else 
 		printf("\nTong cac so nguyen to la: %d",s);
-	getch();
+
 }
