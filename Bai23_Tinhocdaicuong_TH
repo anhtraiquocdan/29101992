@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <string.h>
 
 main(){
@@ -6,7 +7,7 @@ main(){
 	char N[100];
 	while(i!=-1){
 		printf("\nNhap vao so nguyen N>=0 he co so 2 :");
-               fflush(stdin);gets(N);
+    	fflush(stdin);gets(N);
 		L=strlen(N)-1;
  		for(i=L;i>=0;i--)
 		if(N[i]!='0'&&N[i]!='1') break;
@@ -17,5 +18,6 @@ main(){
 		M=M+pow(2,L-i);
         i--;
 		}
- printf("\nGia tri so vua nhap o he co so 10 la : %d",M);
- getch();
+ 	printf("\nGia tri so vua nhap o he co so 10 la : %d",M);
+
+}
