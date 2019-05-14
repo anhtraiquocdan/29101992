@@ -1,5 +1,4 @@
 #include "stdio.h"
-#include <conio.h>
 
 main(){
 	int N,i,X,a[9],tong=0;
@@ -29,14 +28,14 @@ main(){
 	
 	if (X<=N){
 		for(i=0;i<X;i++)
-			tb = tb +a[i]; /* Bien tb vua tinh la tong vua tinh la trung binh cong */
+		tb = tb +a[i]; /* Bien tb vua tinh la tong vua tinh la trung binh cong */
 		tb=tb/X; /* Tinh TBC*/
     	printf("\nGia tri trung binh %d so dau tien trong day la %.2f",X,tb);
 	}
     else{
   		for(i=0;i<N;i++) 
-			tong=tong+ a[i];//Tong cac so trong mang
+		tong=tong+ a[i];//Tong cac so trong mang
         printf("\nTong cac so trong day la %d",tong);
 	}
-	getch();
+	
 }
