@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
+
 main(){
 	int N,i,d=0,a[9];
 	float tong=0, tb;
@@ -32,5 +32,5 @@ main(){
 		tb=tong/d; /*Bien tong khai bao la so thuc nen k can ep kieu nua */
     	printf("\nTrung binh cong cua cac so chan (chia het cho 2) co trong day la:  %.2f",tb);
 	}
-	getch();
+	
 }
