@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
-#include<conio.h>
-int main(){
+
+main(){
 	
 	int N,i,j,a[9],So_Uoc,dem =0; // so uoc: dem sl uoc cua a[i]
 	
@@ -36,5 +36,5 @@ int main(){
 		printf("Day khong co so nguyen to nao !");
 	else 
 		printf("\nSo luong so nguyen to co trong day la %d",dem);
-	getch();
+
 }
