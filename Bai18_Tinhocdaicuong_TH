@@ -1,5 +1,5 @@
 #include <stdio.h>
-#
+
 main(){
 	int N,n,T,i;
 	do{
@@ -19,6 +19,6 @@ main(){
 		}
   		if(T==i) printf("%5d",i);
 	}
-	getch();
+	
  }
 
