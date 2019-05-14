@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <conio.h>
-#include <math.h>
+
 main(){
 	int M,N,i,Tong_Uoc_Cua_M=0, Tong_Uoc_Cua_N =0,dem=0 ;
 		
