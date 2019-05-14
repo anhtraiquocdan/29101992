@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+
 main(){ 
 	int i=0,a[7];
 	printf("Nhap vao 7 so nguyen giam dan:");
@@ -15,6 +15,6 @@ main(){
 	
 	printf("\nDay so vua nhap la: ");
 	for(i=0;i<7;i++) printf("%5d",a[i]);
-	getch();
+	
 }
 
