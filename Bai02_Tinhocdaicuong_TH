@@ -1,8 +1,6 @@
 #include<stdio.h>
-#include<conio.h>
 main(){
 	int N[7],i,j,n=0,k;
-	
 	for(i=0;i<7;i++) {						
 		printf("Nhap phan thu %d: ",i+1);
 		scanf("%d",&N[i]);
@@ -27,5 +25,4 @@ main(){
 	printf("\nMang da duoc sap xep tang dan la :");
 	for(i=0;i<n;i++)
 			printf("%5d",N[i]);
-	getch();
 }
