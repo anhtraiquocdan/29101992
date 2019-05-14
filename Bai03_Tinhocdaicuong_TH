@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 
 main(){
 	int N, i , dem=0;
@@ -31,6 +30,5 @@ main(){
 					
 	printf("\nGia tri lon nhat cua day la %.2f",max);
 	printf("\nso luong phan tu bang gia tri lon nhat la %d",dem);
-	getch();
 }
 
