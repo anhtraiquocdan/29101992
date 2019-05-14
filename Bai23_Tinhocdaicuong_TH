@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
-#include <math.h>
 #include <string.h>
+
 main(){
 	int M=0,L,i=0;
 	char N[100];
