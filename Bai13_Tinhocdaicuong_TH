@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 
 main(){
 	int i,N,a[9],X,dem=0;
@@ -28,7 +27,7 @@ main(){
 	for(i=0;i<N;i++)
 		if(X==a[i]) dem ++;
 	printf("\nSo luong phan tu trong day co gia tri bang X la %d",dem);
-	getch();
+
 }
 
 
