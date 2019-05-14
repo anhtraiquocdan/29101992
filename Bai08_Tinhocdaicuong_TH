@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+
 main(){
 	
 	int i, j, a[9], N, Tong_Uoc, dem=0;
@@ -32,6 +32,6 @@ main(){
 		printf("\nKhong co so hoan thien nao!");	
 	else 
 		printf("\nSo luong so hoan thien co trong day la: %d", dem);
-	getch();
+	
 }
 	
